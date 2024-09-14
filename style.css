@@ -10,6 +10,7 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     background-color: rgb(243,242,243);
+    width: 100vw;
 }
 .hero{
     background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0, 0, 0, 0.25)),url(image/family-camping-at-sunset.jpg);
@@ -30,14 +31,13 @@ body{
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap:25vw;
+    
     
     p{
-        font-size: 25px;
+        font-size: 1.5rem;
         color: white;
         font-weight: 700;
     }
@@ -47,6 +47,7 @@ body{
         gap: 35px;
         color: white;
         flex-wrap: wrap;
+        padding: 20px;
         font-weight: 400;
     }
     p>a:hover{
@@ -63,12 +64,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     h1{
-        font-size: 60px;
+        font-size: 4em;
         color: white;
         text-align: center;
         font-weight: 700;
         text-shadow: 0 0 5px #424141;
+    }
+    @media (max-width: 617px){
+        h1{
+            font-size: 2em;
+        }
+        p{
+            font-size: 16px;
+        }
     }
     p{
         font-size: 20px;
@@ -164,7 +174,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding-top: 50px;
     padding: 100px 0;
     h1{
         font-size: 32px;
